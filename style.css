@@ -1,0 +1,206 @@
+
+ body{
+
+   background:
+   radial-gradient(
+     circle at top,
+     rgba(255,122,47,.12),
+     transparent 30%
+   ),
+   #050b12;
+
+ }
+
+ .hero::after{
+
+   content:"";
+
+   position:absolute;
+
+   inset:0;
+
+   background:
+
+   radial-gradient(
+     circle at 20% 20%,
+     rgba(255,122,47,.18),
+     transparent 30%
+   ),
+
+   radial-gradient(
+     circle at 80% 30%,
+     rgba(255,255,255,.05),
+     transparent 35%
+   );
+
+   pointer-events:none;
+
+ }
+
+ h1{
+
+   text-transform:uppercase;
+
+   text-shadow:
+   0 0 30px rgba(255,122,47,.15);
+
+ }
+
+ .hero-subtitle{
+
+   letter-spacing:1px;
+
+ }
+
+ .hero-description{
+
+   font-size:1.08rem;
+
+ }
+
+ .hero-image{
+
+   animation:
+   float 5s ease-in-out infinite;
+
+ }
+
+ @keyframes float{
+
+   0%{
+     transform:translateY(0px);
+   }
+
+   50%{
+     transform:translateY(-12px);
+   }
+
+   100%{
+     transform:translateY(0px);
+   }
+
+ }
+
+ .hero-image img{
+
+   box-shadow:
+   0 40px 80px rgba(0,0,0,.45);
+
+ }
+
+ .button.primary{
+
+   box-shadow:
+   0 10px 35px rgba(255,122,47,.35);
+
+ }
+
+ .button.primary:hover{
+
+   box-shadow:
+   0 18px 45px rgba(255,122,47,.45);
+
+ }
+
+ .card,
+ .benefit{
+
+   backdrop-filter:blur(12px);
+
+   background:
+   linear-gradient(
+     180deg,
+     rgba(255,255,255,.05),
+     rgba(255,255,255,.03)
+   );
+
+ }
+
+ .gallery img{
+
+   transition:.5s;
+
+   filter:
+   saturate(.9)
+   contrast(1.05);
+
+ }
+
+ .gallery img:hover{
+
+   transform:scale(1.03);
+
+   filter:
+   saturate(1.1)
+   contrast(1.1);
+
+ }
+
+ .videos iframe{
+
+   border:
+   1px solid rgba(255,255,255,.08);
+
+   box-shadow:
+   0 20px 50px rgba(0,0,0,.35);
+
+ }
+
+ section{
+
+   position:relative;
+
+ }
+
+ section::before{
+
+   content:"";
+
+   position:absolute;
+
+   top:0;
+   left:50%;
+
+   width:500px;
+   height:1px;
+
+   background:
+   linear-gradient(
+     90deg,
+     transparent,
+     rgba(255,122,47,.35),
+     transparent
+   );
+
+   transform:translateX(-50%);
+
+ }
+
+ .section-label{
+
+   font-size:.85rem;
+
+ }
+
+ .hero-achievements div{
+
+   backdrop-filter:blur(10px);
+
+ }
+
+ @media(max-width:950px){
+
+   h1{
+
+     font-size:3.5rem;
+     line-height:.95;
+
+   }
+
+   .hero-description{
+
+     font-size:1rem;
+
+   }
+
+ }
